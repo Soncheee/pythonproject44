@@ -6,5 +6,5 @@ def numbers():
 
 @pytest.fixture
 def letters():
-    return "ебетлименя"
+    return "аня"
 

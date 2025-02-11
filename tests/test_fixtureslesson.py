@@ -8,10 +8,10 @@ def test_reverse_numbers(numbers):
 
 
 def test_reverse_letters(letters):
-    assert reverse_string("янемилтебе") == letters
+    assert reverse_string("яна") == letters
 
 
-@pytest.mark.parametrize('value, expected', [('123', '321'), ('янемилтебе','ебетлименя'), ('654','456')])
+@pytest.mark.parametrize('value, expected', [('123', '321'), ('яна','аня'), ('654','456')])
 def test_reverse_string(value, expected):
     assert reverse_string(value) == expected
 
