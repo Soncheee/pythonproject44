@@ -30,8 +30,3 @@ isort = "^6.0.0"
 [tool.mypy]
 disallow_untyped_defs = true
 warn_return_any = true
-
-
-
-
-

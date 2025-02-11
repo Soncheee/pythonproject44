@@ -9,5 +9,3 @@ def numbers():
 @pytest.fixture
 def letters():
     return "аня"
-
-
