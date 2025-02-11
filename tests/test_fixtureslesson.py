@@ -3,6 +3,7 @@ import pytest
 from src.fixtureslesson import reverse_string
 from src.fixtureslesson import finder
 
+
 def test_reverse_numbers(numbers):
     assert reverse_string("123") == numbers
 
@@ -31,5 +32,3 @@ def test_finder_empty():
 
 def test_finder_not_list():
     assert finder(123, int) == 0
-
-
