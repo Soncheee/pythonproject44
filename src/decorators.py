@@ -5,6 +5,9 @@ import pytest
 
 def log(filename=None):
     def decorator(func):
+        '''Декоратор если получает имя файла выводит результат в этот файл,
+        если нет, то выводит в консоль, определяет ошибку при возникновении,
+        выводит информацию о ней'''
         @functools.wraps(func)
         def wrapper(*args, **kwargs):
             try:
