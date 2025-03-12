@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 
 
 def get_transaction_amount(transaction_info, currency="RUB"):
+    '''Функция возвращает сумму в рублях'''
     code = transaction_info.get("operationAmount").get("currency").get("code")
     amount = transaction_info.get("operationAmount").get("amount")
     if code == currency:
