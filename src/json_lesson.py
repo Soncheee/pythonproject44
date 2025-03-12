@@ -6,7 +6,7 @@ import requests
 from unittest.mock import patch
 from dotenv import load_dotenv
 
-load_dotenv('../.env')
+load_dotenv("../.env")
 
 # book_info = {"name": "1984", "author": "George Orwell", "genres": ["non fiction", "antiutopia"]}
 #
@@ -84,5 +84,3 @@ load_dotenv('../.env')
 # if __name__ == "__main__":
 #     lat, lon = get_coords("Moscow")
 #     print(get_weather(lat, lon))
-
-
