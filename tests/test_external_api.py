@@ -8,7 +8,8 @@ from src.external_api import get_transaction_amount
 
 @patch("requests.get")
 def test_get_transaction_amount_mock(mock_get):
-    '''Тест для конвертации валюты с использованием Mock и patch.'''
+    '''Тест для конвертации валюты с использованием Mock и patch.
+    '''
     mock_get.return_value.json.return_value = {
         "success": True,
         "info": "some_info",
