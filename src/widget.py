@@ -16,7 +16,7 @@ def mask_account_card(number: str) -> str:
         correct_number = card_number[0:7] + card_number[7:14] + card_number[12:]
         number_mask = (
             name_card
-            + " "
+            + ""
             + correct_number[0:4]
             + " "
             + correct_number[4:6]
@@ -24,20 +24,14 @@ def mask_account_card(number: str) -> str:
             + " "
             + "****"
             + " "
-            + correct_number[12:16]
+            + correct_number[14:]
         )
 
         return number_mask
 
-
-n = input()
-print(mask_account_card(n))
-
+print(mask_account_card('Maestro 159683786prtyipt'))
 
 def get_date(date: str) -> str:
     '''Функция принимает строку с датой в формате "2024-03-11T02:26:18.671407" и возвращает в формате "ДД.ММ.ГГГГ"'''
     return date[8:10] + "." + date[5:7] + "." + date[0:4]
 
-
-d = input()
-print(get_date(d))
