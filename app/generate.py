@@ -27,4 +27,4 @@ async def ai_generate(text: str):
         return completion.choices[0].message.content
     except Exception as e:
         logger.error(f"Ошибка при запросе к модели: {e}")
-        return "Произошла ошибка при генерации ответа. Пожалуйста, попробуйте позже."
+        return "Произошла ошибка при генерации ответа. Пожалуйста, попробуйте позже"

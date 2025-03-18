@@ -20,7 +20,7 @@ if __name__ == '__main__':
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
-        logger.info('Бот выключен')
+        logger.info('Бот выключен.')
     except Exception as e:
         logger.error(f"Произошла ошибка: {e}")
 

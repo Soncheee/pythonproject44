@@ -72,4 +72,4 @@ async def generating(message: Message, state: FSMContext):
         await message.answer(response, parse_mode='Markdown')
     except Exception as e:
         logger.error(f"Ошибка при генерации ответа: {e}")
-        await message.answer("Произошла ошибка при генерации ответа. Пожалуйста, попробуйте позже.")
+        await message.answer("Произошла ошибка при генерации ответа. Пожалуйста, попробуйте позже")
