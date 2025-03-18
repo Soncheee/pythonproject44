@@ -21,6 +21,6 @@ get_number = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text='Найти пи
                                                            request_contact=True)]],
                                  resize_keyboard=True)
 
-logger.info("Клавиатуры успешно инициализированы.")
+logger.info("Клавиатуры успешно инициализированы")
 
 
