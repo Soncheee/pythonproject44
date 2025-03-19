@@ -11,7 +11,8 @@ logger.addHandler(file_handler)
 
 
 def get_mask_card_number(card_number: str) -> str:
-    """Маскирует номер банковской карты по правилу XXXX XX** **** XXXX."""
+    """Маскирует номер банковской карты
+    по правилу XXXX XX** **** XXXX."""
     try:
         card_number_str = str(card_number)
         logger.info("Проверяем номер карты на наличие букв")
