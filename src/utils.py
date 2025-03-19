@@ -29,7 +29,7 @@ def get_transaction(json_file_path):
             logger.error("Ошибка при чтении json файла")
             return []
     else:
-        logger.error(f"Файл по пути {json_file_path} не существует")
+        logger.error(f"Файл по пути {json_file_path} не существует.")
         return []
 
 
