@@ -43,7 +43,7 @@ def get_mask_account(account_number: str) -> str:
             if len(account_number_str) == 20:
                 return "**" + account_number_str[-4:]
             else:
-                logger.error("Некорректная длина счёта")
+                logger.error("Некорректная длина счёта.")
                 return "Error"
     except Exception as ex:
         logger.error(f"Произошла ошибка: {ex}")
