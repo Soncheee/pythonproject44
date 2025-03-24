@@ -24,3 +24,4 @@ def test_mask_account_card(card_or_account_info, expected):
 )
 def test_get_date(date, expected):
     assert widget.get_date(date) == expected
+

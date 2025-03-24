@@ -15,3 +15,4 @@ def get_mask_account(number: int) -> str:
         return "Error"
     number_mask = "**" + number[-4:]
     return number_mask
+

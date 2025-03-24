@@ -9,3 +9,4 @@ def test_divide_exception_log():
         my_function((1, 2), {})
     with pytest.raises(ValueError):
         divide(1, 0)
+

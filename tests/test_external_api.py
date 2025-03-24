@@ -55,3 +55,4 @@ def test_get_transaction_amount():
         )
         == "31957.58"
     )
+
