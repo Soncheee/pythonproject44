@@ -1,14 +1,33 @@
-# 13.1 Домашнее задание
+# 13.1 **Домашнее задание**
 
-## Инструменты: pandas, csv
+## Инструменты: *pandas, csv, re, collections, json*
 
-## Добавлены файлы file_processor.py, transactions.csv, transactions_excel.xlsx,
-## pandasnscv.py, test_file_processor.py
+### Добавлен файл *reading_transactions.py*
 
-## file_processor.py - содержит функции, одна для считывания транзакций
-из CSV, другая из Excel
+### Содержит функцию фильтрации списка транзакций по определенному слову в описании:
+```
+def transactions_search_by_desctiption(dict_list, search_string):
+    '''Функция возвращает список с выбранным описанием'''
+    pattern = re.compile(search_string, re.IGNORECASE)
+    return [transaction for transaction in dict_list if pattern.search(transaction.get('desciption', ''))]
+```
 
-## pandasnscv.py - в неего импортированы эти 2 функции, функция main 
-## выводит первые 2 транзакции из CSV/Excel
+### Содержит функцию фильтрации по статусу:
+```
+def transactions_filter_by_status(dict_list, status):
+    '''Фильтрует по статусу'''
+    status = status.lower()
+    return [transaction for transaction in dict_list if transaction.get('status') == status.lower()]
+```
 
-## test_file_processor.py - содержит тесты для этих функций
+### Содержит функцию подсчета категорий:
+```
+def transactions_filter_by_category(dict_list, categories):
+    '''Функция подсчета категорий'''
+    categories = []
+    for dictionary in dict_list:
+        cat = dictionary.get('category', '')
+        categories.append(cat)
+    categories_count = Counter(categories)
+    return categories_coun
+```
