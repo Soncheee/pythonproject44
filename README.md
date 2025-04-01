@@ -31,3 +31,4 @@ def transactions_filter_by_category(dict_list, categories):
     categories_count = Counter(categories)
     return categories_coun
 ```
+
