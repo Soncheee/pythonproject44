@@ -34,5 +34,3 @@ def test_multiple_categories(new_category):
 
     assert Category.total_category == 0
     assert Category.total_products == 0
-
-

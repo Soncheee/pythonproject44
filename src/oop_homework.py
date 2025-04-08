@@ -25,6 +25,3 @@ class Category:
         Category.total_category += 1
     def product_count(self):
         Category.total_products += len(self.products)
-
-
-
