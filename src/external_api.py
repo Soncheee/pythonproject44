@@ -35,4 +35,3 @@ transaction = {
 }
 
 print(get_transaction_amount(transaction))
-

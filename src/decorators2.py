@@ -42,4 +42,3 @@ def my_function(x, y):
 
 
 print(my_function(1, 3))
-
