@@ -117,4 +117,3 @@ def card_number_generator(start=1, stop=9999999999999999):
 
 for card_number in card_number_generator(1, 1):
     print(card_number)
-

@@ -1,4 +1,5 @@
 import os
+
 import requests
 from dotenv import load_dotenv
 
@@ -34,4 +35,3 @@ transaction = {
 }
 
 print(get_transaction_amount(transaction))
-

@@ -48,6 +48,5 @@ def get_mask_account(account_number: str) -> str:
     except Exception as ex:
         logger.error(f"Произошла ошибка: {ex}")
 
-
 # print(get_mask_account("12345123451234512345"))
 # print(get_mask_card_number("1234123412341234"))
